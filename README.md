@@ -1,14 +1,15 @@
-# Financial Sentiment Analyzer (FinBERT)
 
-A production-ready sentiment analysis tool for financial text, specifically designed for earnings call transcripts and corporate communications. Uses FinBERT, a BERT model fine-tuned on financial documents.
+# Transcript Delta Detector
+
+A tool for detecting and classifying material changes between two earnings call transcripts. Identifies what changed in management language, which topics were affected, and how material the changes are.
 
 ## Features
 
-- Single Text Analysis: Analyze sentiment of any financial text passage
-- Topic-Specific Analysis: Focus sentiment analysis on specific topics (margins, guidance, revenue, etc.)
-- Sentiment Comparison: Compare sentiment between two transcripts (quarter-over-quarter)
-- Confidence Scoring: Returns confidence scores for every prediction
-- Batch Processing: Analyze multiple texts efficiently
+- Change Detection: Identifies added, removed, and modified sentences between two transcripts
+- Topic Classification: Automatically classifies changes by topic (revenue, guidance, margins, competition, etc.)
+- Materiality Assessment: Scores changes as low, moderate, or high materiality
+- Sentiment Integration: Combines with FinBERT to detect sentiment shifts
+- Delta Reports: Generates structured JSON reports of all changes
 
 ## Installation
 
